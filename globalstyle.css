@@ -6,12 +6,28 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.btn-bg {
+  padding: 10px 50px;
+  border: 1px solid rgba(41, 66, 141, 1);
+  font-weight: 400;
+}
+.btn-bg.active {
+  color: white;
+  background-color: rgba(41, 66, 141, 1);
+}
+
 :root {
   --btn-bg: #2d3d88;
   --footer-gradient: linear-gradient(97.12deg, #29428d 67.22%, #d33c92 122.89%);
 }
 section {
   margin: 40px 0;
+}
+input:focus-visible {
+  outline: none;
+}
+label {
+  display: block;
 }
 
 .container {

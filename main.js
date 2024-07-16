@@ -12,3 +12,22 @@ closeMenu.onclick = () => {
   slideMenu.classList.remove("active");
   document.body.style.overflowY = "auto";
 };
+
+//swiper
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
