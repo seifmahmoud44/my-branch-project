@@ -66,7 +66,18 @@
 }
 
 @media (max-width: 767px) {
-  .network .container .filter div {
+  .network .container .filter div,
+  .network .container .filter {
     border-right: none;
+    flex-direction: column;
+  }
+  .network .container .filter div {
+    width: 100%;
+    padding: 0;
+  }
+  .network .container .filter div a,
+  .network .container .filter a {
+    width: 100%;
+    display: block;
   }
 }
