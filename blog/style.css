@@ -19,19 +19,14 @@
 }
 
 .cards-con {
-  display: flex;
+  display: grid;
   gap: 15px;
-  margin: auto;
-
   margin-top: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
 }
 
 .card {
   border: 1px solid rgba(217, 217, 217, 1);
-  max-width: 400px;
-  min-width: 350px;
 }
 .cards-con img {
   width: 100%;
